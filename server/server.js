@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('build'));
 
 /* Express Routes */
-app.use('/', teamsRouter);
+app.use('/teams', teamsRouter);
 
 /* * Start Server * */
 app.listen(PORT, () => {

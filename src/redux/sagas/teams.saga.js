@@ -3,16 +3,10 @@ import axios from "axios";
 
 function* getTeams(action) {
     try {
-        console.log('get teams saga')
-        const teams = yield axios.get(`/`);
-        console.log(teams)
+        const results = yield axios.get(`/teams`);
+        const teams = results.data
 
-        // const teams = results.data
-    
-        // console.log(results)
-
-
-        yield put({ type: 'SET_SCORES', payload: teams });
+        yield put({ type: 'SET_TEAMS', payload: teams });
 
     } catch {
         console.log('get all error');
