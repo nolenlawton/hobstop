@@ -13,8 +13,21 @@ function* getTeams(action) {
     }
 }
 
+function* getTeam({action}) {
+    try {
+        const results = yield axios.get(`/teams/${action.name}`);
+        const team = results.data
+
+        yield put({ type: 'SET_TEAM', payload: team });
+
+    } catch {
+        console.log('get all error');
+    }
+}
+
 function* teamsSaga() {
     yield takeEvery('GET_TEAMS', getTeams)
+    yield takeEvery('GET_TEAM', getTeam)
 }
 
 export default teamsSaga
