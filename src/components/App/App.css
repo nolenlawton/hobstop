@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* entire page */
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: 'Ysabeau SC', sans-serif;
+    margin: 0px;
+    background-color: rgb(66, 90, 118);
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-bottom: 2px solid white;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+#navTitle {
+    display: flex;
+    font-size: 48px;
+}
+
+#navImage {
+    width: 48px;
+    aspect-ratio: 1/1;
+}
+
+#navSports {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    margin: 1%;
+}
+
+#selectedSport {
+    border-bottom: 2px solid rgb(54, 63, 83);
+}
+
+.sport {
+    margin-right: 16px;
+    cursor: pointer;
+}
+/* end navbar */
+
+/* list of teams */
+#teamList {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 102px;
+    /* margin-left: 240px */
+
+}
+
+/* team in list */
+#team {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 16px;
+    margin: 2% 4% 2% 4%;
+    color: white;
+    padding: 1%;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* sidebar */
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 220px;
+    padding-left: 20px;
+    margin-top: 102px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    box-shadow: 2px 4px 4px black;
+}
+
+.sidebarChoice {
+    margin: 24px;
+    cursor: pointer
+}
+
+.sidebarChoice.open {
+    margin: 24px;
+    color: red
+}
+
+
+
+#teamPage {
+    margin-top: 8%;
+}
+
+/* teampage header */
+#teamHeader {
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 8px;
+    font-size: 48px;
+}
+
+/* teampage body */
+#teamBody {
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+/* media player in teampage body */
+#mediaPlayer {
+    padding: 26%;
+    position: relative;
+    border-radius: 8px;
+}
+
+/* schedule at bottom of teampage */
+#teamSchedule {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 4% 2% 4% 2%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 80%;
+}
+
+#arrow:hover {
+    transform: translateX(22px);
+    transition: all 200ms
+}
