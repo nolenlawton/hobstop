@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import teams from './teams.reducer';
 import team from './team.reducer'
 import players from './players.reducer'
+import standings from './standings.reducer'
 
 // rootReducer is the primary reducer for our entire project
 // It bundles up all of the other reducers so our project can use them.
@@ -9,7 +10,8 @@ import players from './players.reducer'
 const rootReducer = combineReducers({
   teams,
   team,
-  players
+  players,
+  standings
 });
 
 export default rootReducer;

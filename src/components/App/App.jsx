@@ -1,10 +1,10 @@
 import './App.css'
-import TeamsList from '../Teams/TeamsList';
-import TeamPage from '../Teams/TeamPage';
-import Players from '../Players'
-import Standings from '../Standings'
-import Statistics from '../Statistics'
-import Community from '../Community'
+import TeamsList from '../TeamsPage/TeamsList';
+import TeamPage from '../TeamsPage/TeamPage';
+import Players from '../PlayersPage/Players'
+import Standings from '../StandingsPage/Standings'
+import Statistics from '../StatisticsPage/Statistics'
+import Community from '../CommunityPage/Community'
 import { Route, Routes } from 'react-router';
 import Navbar from '../Navigation/Navbar';
 

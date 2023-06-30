@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Navbar () {
     const navigate = useNavigate()
-    const sports = ['mlb', 'nba', 'nfl', 'nhl'];
+    const sports = ['nba'];
 
     return (
         <div id='navbar'>

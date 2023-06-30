@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Sidebar from './Navigation/Sidebar'
+import Sidebar from '../Navigation/Sidebar'
 
 function Community () {
     const sport = useParams().sport

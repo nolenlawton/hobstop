@@ -1,8 +1,21 @@
 import { useParams } from "react-router-dom";
-import Sidebar from './Navigation/Sidebar'
+import Sidebar from '../Navigation/Sidebar'
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 function Players () {
     const sport = useParams().sport
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        getPlayers()
+    }, [])
+
+    const getPlayers = () => {
+        dispatch({
+            type: 'GET_ALL_PLAYERS'
+        })
+    }
 
     return (
         <>

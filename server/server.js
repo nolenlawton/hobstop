@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const teamsRouter = require('./routes/teams.router.js')
 const playersRouter = require('./routes/players.router.js')
+const standingsRouter = require('./routes/standings.router.js')
 
 /* Middlewear */
 app.use(bodyParser.json());
@@ -14,6 +15,7 @@ app.use(express.static('build'));
 /* Express Routes */
 app.use('/teams', teamsRouter);
 app.use('/players', playersRouter);
+app.use('/standings', standingsRouter);
 
 /* * Start Server * */
 app.listen(PORT, () => {
