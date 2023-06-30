@@ -9,19 +9,19 @@ function* getTeams(action) {
         yield put({ type: 'SET_TEAMS', payload: teams });
 
     } catch {
-        console.log('get all error');
+        console.log('get teams error');
     }
 }
 
-function* getTeam({action}) {
+function* getTeam({payload}) {
     try {
-        const results = yield axios.get(`/teams/${action.name}`);
+        const results = yield axios.get(`/teams/${payload.name}`);
         const team = results.data
 
         yield put({ type: 'SET_TEAM', payload: team });
 
     } catch {
-        console.log('get all error');
+        console.log('get team error');
     }
 }
 
