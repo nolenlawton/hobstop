@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
+// gets standings (not in correct order)
 router.get('/', async (req, res) => {
     const date = new Date()
     const year = date.getFullYear()
@@ -19,7 +20,6 @@ router.get('/', async (req, res) => {
        axios.get('https://api-nba-v1.p.rapidapi.com/standings', {params, headers})
 
     .then(response => {
-        console.log('STANDINGS', response.data.response[0])
         res.send(response.data.response)
     })
     .catch(err => {

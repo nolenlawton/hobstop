@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios')
 
+// gets players from a specific team and year
 router.get('/:team/:year', async (req, res) => {
 
     let params = {

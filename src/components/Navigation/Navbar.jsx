@@ -6,6 +6,8 @@ function Navbar () {
     const navigate = useNavigate()
     const sports = ['nba'];
 
+    // clean up for only NBA ?
+
     return (
         <div id='navbar'>
             <div id="navTitle">

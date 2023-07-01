@@ -11,6 +11,7 @@ function Players () {
         getPlayers()
     }, [])
 
+    //  struggle to get all
     const getPlayers = () => {
         dispatch({
             type: 'GET_ALL_PLAYERS'
